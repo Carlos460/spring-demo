@@ -1,2 +1,12 @@
 server:
   port: 3000
+spring:
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    driver: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
